@@ -1,7 +1,7 @@
 {
     "name": "docx-to-markdown",
     "description": "docx to markdown with `npx docx-to-markdown`",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "author": {
         "name": "Saad Irfan",
         "email": "mrsaadirfan@gmail.com",
