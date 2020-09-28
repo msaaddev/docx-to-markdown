@@ -10,8 +10,6 @@
 const welcome = require('cli-welcome');
 const pkgJSON = require('./package.json');
 const cli = require('./utils/cli');
-const path = require('path');
-const directoryPath = path.join(__dirname);
 
 (module.exports = async () => {
     welcome({
@@ -25,6 +23,5 @@ const directoryPath = path.join(__dirname);
         version: `${pkgJSON.version}`,
     });
 
-    console.log('path', directoryPath);
     await cli();
 })();
