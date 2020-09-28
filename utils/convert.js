@@ -4,8 +4,6 @@ const ora = require('ora');
 module.exports = async filenames => {
     let spinner = ora();
 
-    
-
     spinner.start(`Converting docx files to markdown`);
     try {
         await execa(`mkdir`, [`markdown`]);

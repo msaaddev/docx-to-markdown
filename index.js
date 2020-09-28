@@ -12,20 +12,18 @@ const pkgJSON = require('./package.json');
 const cli = require('./utils/cli');
 const path = require('path');
 const directoryPath = path.join(__dirname);
-const end = require('./utils/end');
 
 (module.exports = async () => {
     welcome({
         title: `docx to markdown`,
         tagLine: `by ${pkgJSON.author.name}`,
         description: `${pkgJSON.description}`,
-        bgColor: `#00a1f1`,
-        color: `#000000`,
+        bgColor: `#5D39FD`,
+        color: `#FFF`,
         bold: true,
         clear: true,
         version: `${pkgJSON.version}`,
     });
 
     await cli(directoryPath);
-    end();
 })();
