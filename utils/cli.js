@@ -2,11 +2,12 @@ const fs = require('fs');
 const convert = require('./convert');
 const end = require('./end');
 const chalk = require('chalk');
+const cwd = process.cwd();
 
-module.exports = async directoryPath => {
+module.exports = async () => {
     const filenames = [];
 
-    fs.readdir(directoryPath, async (err, files) => {
+    fs.readdir(cwd, async (err, files) => {
         files.forEach(file => {
             if (file[file.length - 1] === 'x' && file[file.length - 2] === 'c') {
                 const res = file.split('.');

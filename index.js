@@ -26,5 +26,5 @@ const directoryPath = path.join(__dirname);
     });
 
     console.log('path', directoryPath);
-    await cli(directoryPath);
+    await cli();
 })();
