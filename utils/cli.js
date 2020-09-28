@@ -16,7 +16,7 @@ module.exports = async () => {
         });
 
         if (filenames.length === 0) {
-            console.log(`${chalk.hex('#DF661E').inverse(' INFO ')} No docx files found`);
+            console.log(`${chalk.hex('#DF661E').inverse(' INFO ')} No docx file/s found`);
             end();
             return;
         } else await convert(filenames);
