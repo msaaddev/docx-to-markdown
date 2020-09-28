@@ -25,5 +25,6 @@ const directoryPath = path.join(__dirname);
         version: `${pkgJSON.version}`,
     });
 
+    console.log('path', directoryPath);
     await cli(directoryPath);
 })();
