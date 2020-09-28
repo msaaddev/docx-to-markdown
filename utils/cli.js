@@ -1,6 +1,7 @@
 const fs = require('fs');
 const convert = require('./convert');
 const end = require('./end');
+const chalk = require('chalk');
 
 module.exports = async directoryPath => {
     const filenames = [];
@@ -14,7 +15,8 @@ module.exports = async directoryPath => {
         });
 
         if (filenames.length === 0) {
-            console.log('No docx files found.');
+            console.log(`${chalk.hex('#DF661E').inverse(' INFO ')} No docx files found`);
+            end();
             return;
         } else await convert(filenames);
         end();

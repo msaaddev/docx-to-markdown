@@ -22,7 +22,7 @@ module.exports = async filenames => {
             } catch (error) {}
         });
         spinner.succeed(
-            `${chalk.hex(`#6cc644`).inverse(` DONE `)} ${filenames.length} file conversion`
+            `${chalk.hex(`#6cc644`).inverse(` DONE `)} ${filenames.length} file converted`
         );
     } catch (error) {
         spinner.fail(`${chalk.hex(`#FF0000`).inverse(` ERROR `)} Couldn't convert the files.`);
