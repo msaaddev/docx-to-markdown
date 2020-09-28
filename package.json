@@ -1,0 +1,32 @@
+{
+    "name": "docx-to-markdown",
+    "description": "docx to markdown with `npx docx-to-markdown`",
+    "version": "1.0.0",
+    "author": {
+        "name": "Saad Irfan",
+        "email": "mrsaadirfan@gmail.com",
+        "url": "https://twitter.com/msaaddev"
+    },
+    "main": "index.js",
+    "bin": {
+        "docx-to-markdown": "index.js"
+    },
+    "repository": "msaaddev/docx-to-markdown.git",
+    "keywords": [
+        "Saad Irfan",
+        "docx to markdown",
+        "docs to markdown",
+        "markdown converter",
+        "docx converter"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "cli-welcome": "^2.2.2",
+        "execa": "^4.0.3",
+        "ora": "^5.1.0"
+    },
+    "scripts": {
+        "test": "node test.js"
+    }
+}
